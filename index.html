@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estética Lu</title>
+  <meta name="description" content="Servicios de cosmetología médica: limpiezas faciales, mesoterapia, masajes y más." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <div class="brand">Estética Lu</div>
+      <nav class="menu" aria-label="Menú">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#quienes">Quiénes somos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false">
+        <!-- Icono hamburguesa -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Menú móvil">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main id="inicio" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-figure" aria-hidden="true">
+          <img src="imagenes/consultorio.jpg" alt="Interior del espacio de Estética Lu"> 
+        </div>
+        <div>
+          <h1 id="hero-title">Cuidamos tu piel con ciencia y calidez</h1>
+          <p>Limpieza facial, mesoterapia, masajes y más. Agenda tu turno y viví una experiencia pensada para vos.</p>
+          <a class="btn" href="#contacto">Reservar turno</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" aria-labelledby="servicios-title">
+      <div class="container">
+        <h2 id="servicios-title" class="section-title">Servicios</h2>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-media">
+              <img src="imagenes/atendiendo.jpg" alt="Limpieza facial en mujer"> 
+            </div>
+            <div class="card-body">
+              <h3>Limpieza facial</h3>
+              <div class="meta">45 min
+              </div>
+              <div class="cta">
+                <a class="btn" href="#contacto">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="imagenes/Mesoterapia.jpg" alt="Mesoterapia en hombre"> 
+            </div>
+            <div class="card-body">
+              <h3>Mesoterapia</h3>
+              <div class="meta">30 min</div>
+              <div class="cta">
+                <a class="btn" href="#contacto">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="imagenes/maquillaje.jpeg" alt="Maquillaje social"> 
+            </div>
+            <div class="card-body">
+              <h3>Maquillaje</h3>
+              <div class="meta">45 min</div>
+              <div class="cta">
+                <a class="btn" href="#contacto">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestro espacio -->
+    <section aria-labelledby="espacio-title">
+      <div class="container">
+        <h2 id="espacio-title" class="section-title">Nuestro espacio</h2>
+        <div class="space">
+          <img src="imagenes/consultorio.jpg" alt="Interior del espacio de Estética Lu"> 
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <h2 id="galeria-title" class="section-title">Galería</h2>
+        <div class="gallery">
+           <img class=ph src="imagenes/consultorio.jpg" alt="consultorio"> 
+          <img class=ph src="imagenes/imagen1.jpeg" alt="maquillaje social"> 
+          <img class=ph src="imagenes/imagen2.jpeg" alt="maquillaje casamiento"> 
+          <img class=ph src="imagenes/imagen3.jpeg" alt="peinado"> 
+          <img class=ph src="imagenes/imagen4.jpeg" alt="artistico"> 
+          <img class=ph src="imagenes/maquillaje5.jpeg" alt="maquillaje quinceañera"> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiénes somos -->
+    <section id="quienes" aria-labelledby="quienes-title">
+      <div class="container">
+        <h2 id="quienes-title" class="section-title">Quiénes somos</h2>
+        <div class="about">
+          <div class="portrait">
+            <img class=ph src="imagenes/fotocv.webp" alt="artistico"> 
+          </div>
+          <div>
+            <p>Hola! Soy Lucía Cabeda, Cosmetóloga Médica de 26 años. Me considero una persona amable y profesional, comprometida en brindar los mejores tratamientos estéticos a mis pacientes. </p>
+            <p>Cuento con una sólida formación en cosmetología y medicina, estoy capacitada para ofrecer soluciones personalizadas y seguras para mejorar la apariencia y la salud de tu piel.</p>
+            <p>Además soy maquilladora y peinadora con experiencia en el rubro, capacitada para poder asesorarte y acompañarte en tus fiestas y eventos.</p>
+            <p>¡Estoy emocionada por poder trabajar contigo y ayudarte a alcanzar tus metas de belleza!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <h2 id="contacto-title" class="section-title">Contacto</h2>
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <h3>Escribinos</h3>
+            <p class="chip">+598 97106600</p>
+            <p>Atendemos con agenda. Respuestas en horario laboral.</p>
+            <a class="btn" href="https://wa.me/59897106600" target="_blank" rel="noopener noreferrer">
+  WhatsApp
+</a>
+
+          </div>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.4439387099474!2d-56.173105688769986!3d-34.870196972746776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f815e65e6d4e5%3A0xdcdb16c06a4fbcf!2sEstilizate%2FNuevoCentro!5e0!3m2!1sen!2suy!4v1762021894731!5m2!1sen!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer aria-labelledby="footer-title">
+    <div class="container footer-top">
+      <div>
+        <div id="footer-title" class="footer-brand">Estética Lu</div>
+        <p>Belleza y bienestar con base científica.</p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#quienes">Quiénes somos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <form class="newsletter" action="#" method="post">
+        <label for="email">Suscribite a novedades</label>
+        <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+        <button class="btn" type="submit">Suscribirme</button>
+      </form>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="y"></span> Estética Lu</small>
+      <div class="social">
+        <a href="#" aria-label="Instagram"></a>
+        <a href="#" aria-label="WhatsApp"></a>
+        <a href="#" aria-label="Facebook"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script> <!-- tu JS -->
+</body>
+</html>
